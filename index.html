@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width , initial-scale=0.1">
+<title>My Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="slider()">
+<div class="banner">
+    <div class="slider">
+        <img src="images/img1.jpeg" id="slideImg">
+    </div>
+    <div class="overlay">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="45%" , height="10%">
+                
+            </div>
+            
+            <ul class="nav-area">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://github.com/Aishanaya01"> GitHub link</a></li>
+                <li><a href="https://www.bitdegree.org/learn/html5-semantic-tags"> Html5 blog</a></li>
+                <li><a href="background.html">About us </a></li>
+            </ul>
+            
+            </div>
+            <div>
+                <a href ="form.html" style="  background-color:LightGray;  border-width: 10px;  border: 3px solid black; 
+                border-radius: 6px; border-color: black; margin: 160px auto 0; width:-90%; height: 100px; text-align: center; margin-left: 120px;" >Request form</a>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</div>
+<script>
+    var slideImg = document.getElementById("slideImg");
+
+    var images = new Array(
+    "images/img1.jpeg",
+    "images/img2.jpeg",
+    "images/img3.jpeg",
+    "images/img4.jpeg",
+    "images/img5.jpeg"
+    );
+    var len = images.length;
+    var i =0;
+    function slider(){
+        if (i> len-1){
+            i = 0;
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('slider()', 3000);
+    }
+
+</script>    <div>
+    <a href="https://www.youtube.com/watch?v=mU6anWqZJcc">Crash course of HTML<img src="images/search.png" style="
+      
+        box-sizing: border-box;
+      padding-top: 21px;
+      background-color: grey;
+      border-color:black;
+      padding-right: 2000px;
+      padding-bottom: 10px;
+     padding-left: 51px;
+    
+        margin: 0.1px;""></a>
+        
+</div>
+<footer id="main-footer">
+    <p> Copyright &copy; 2017, My Website </p>
+</footer>
+<video controls
+    src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+    width="100px" margin-left: auto;
+    margin-right: auto;
+    display: block>
+
+Sorry, your browser doesn't support embedded videos,
+but don't worry, you can <a href="https://archive.org/details/BigBuckBunny_124">download it</a>
+and watch it with your favorite video player!
+
+</video>
+</body>
+</html>
